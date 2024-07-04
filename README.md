@@ -52,8 +52,8 @@ To operate this supermarket system, you will need the following:
 
 4. **Clone the Repository**:
    ```bash
-   git clone <https://github.com/ChungmanPARK12/Teddy_Han.git>
-   cd <assignment2>
+   git clone https://github.com/ChungmanPARK12/SupermarketDAO.git
+   cd <python>
 
 # The concept of design
 
