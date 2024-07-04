@@ -61,7 +61,7 @@ The Supermarket Self-Service_Checkout made up of multiple parts.
 
 <h2>Front end</h2>
 
-![image description](https://github.com/ChungmanPARK12/Test2/assets/162090754/74ebdadb-a7a2-41db-8edb-564b5f8b2e32)
+![image description](https://github.com/ChungmanPARK12/SupermarketDAO/assets/162090754/95d1f0d5-c846-4860-a753-9696b7457dd8)
 
 * ### Supermarket Class
 
@@ -81,7 +81,7 @@ Defines a `CheckoutRegister` class to manage product scanning, payment processin
 
 <h2>Back End</h2>
 
-![image description](https://github.com/ChungmanPARK12/Test2/assets/162090754/473cbf39-613b-4b55-b241-f686b274b67a)
+![image description](https://github.com/ChungmanPARK12/SupermarketDAO/assets/162090754/d9e2a6e5-dacf-428f-ab48-50aa280b16b4)
 
 * ### SupermarketDAO
 
