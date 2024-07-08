@@ -9,11 +9,9 @@ supermarketDAO.initDB()
 conn = supermarketDAO.db
 cur = supermarketDAO.cursor
 
-
 def when_exit():
     supermarketDAO.disconnect()
     #sdfadf asdasdf
-
 
 def login():
     while True:
@@ -41,7 +39,8 @@ if __name__ == "__main__":
         print("4. List All Transactions (Ascending order of date of transaction)")
         print("5. Display a Bar chart of Products sold by quantity")
         print("6. Display an Excel report of all transactions")
-        print("7. Exit")
+        print("7. Delete Products from Database")
+        print("8. Exit")
 
         sel = int(input("Please select a choice from above: "))
 
@@ -66,5 +65,9 @@ if __name__ == "__main__":
             supermarketDAO.displayExcelReportOfTransactions()
             print("Completed report of transaction")
             print("Would you like to more select a choice or exit? ")
-        elif sel == 7:
+        if sel == 7:
+            barcode = input("Please insert a barcode to delete: ")
+
+            supermarketDAO.deleteProductFromDB(barcode)
+        elif sel == 8:
             raise SystemExit(0)

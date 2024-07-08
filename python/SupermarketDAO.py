@@ -3,7 +3,6 @@ import openpyxl
 from openpyxl.chart import LineChart, BarChart, Reference
 from datetime import datetime
 
-
 class SupermarketDAO:
     def __init__(self, db_name='supermarket.db'):
         try:
@@ -43,7 +42,6 @@ class SupermarketDAO:
             self.cursor.execute("INSERT OR IGNORE INTO Foods VALUES ('118', 'Grape','Gpe','10' )")
             self.cursor.execute("INSERT OR IGNORE INTO Foods VALUES ('119', 'Apple','1','10' )")
             self.cursor.execute("INSERT OR IGNORE INTO Foods VALUES ('120', 'Sausage','1K','10' )")
-
             self.cursor.commit()
             # Check Product
             for x in self.cursor.execute("SELECT* FROM Foods"):
@@ -59,6 +57,16 @@ class SupermarketDAO:
             return True
         except Exception as e:
             print("SupermarketDAO : Add Food Error!!\nPlease Check Query or Connection")
+            return False
+
+    def deleteProductFromDB(self, barcode):
+        try:
+            self.cursor.execute(
+                f"DELETE FROM Foods WHERE barcode = '{barcode}'")
+            self.db.commit()
+            return True
+        except Exception as e:
+            print("SupermarketDAO : Delete Food Error!!\nPlease Check Query or Connection")
             return False
 
     def listAllProducts(self):

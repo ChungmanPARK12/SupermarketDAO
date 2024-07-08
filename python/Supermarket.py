@@ -1,10 +1,12 @@
 import datetime
 import atexit
+# A custom modul that handles checkout operations
 from CheckoutRegister import CheckoutRegister
 
 if __name__ == "__main__":
     _continue = True
     scan_another = "Y"
+    #Creates an instance of the CheckoutRegister class to handle the checkout process.
     cr = CheckoutRegister()
     products = []
     atexit.register(cr.exitDao)
@@ -13,9 +15,12 @@ if __name__ == "__main__":
     print("----------------------")
     print("Welcome to shopping at Coles!")
     print("----------------------")
+    # Main loop keeps the checkout process running
     while _continue:
+        # Inner loop scanning items
         while scan_another == "Y":
             barcode = input("Enter the barcode:")
+            # scan_item method from CheckoutRegister(cr)
             sel_product = cr.scan_item(barcode)
             if sel_product is None:
                 print("ERROR! Scanned item is not found")

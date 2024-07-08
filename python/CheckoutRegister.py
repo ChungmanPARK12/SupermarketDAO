@@ -3,6 +3,8 @@ from Transactions import Transactions
 from SupermarketDAO import SupermarketDAO
 
 class CheckoutRegister:
+    # Initialize the SupermarketDAo interact with the database
+    # Retrieves all products from the database
     def __init__(self):
         self.supermarketDAO = SupermarketDAO()
         self.products = self.supermarketDAO.listAllProducts()
@@ -14,18 +16,19 @@ class CheckoutRegister:
         return self.amount_due
 
     def scan_item(self, barcode):
+        # use barcode to find the product object from the products
+        # if product found return product
+        # add product shopping cart
+        # else product id not found return none
         for a_product in self.products:
             if a_product[0] == barcode:
                 self.shopping_cart.append(a_product)
                 self.amount_due += float(a_product[3])
                 return a_product
         return None
-        # use barcode to find the product object from the product
-        # if product found return product
-        # add product shopping cart
-        # else product id not found return none
 
     def accept_Payment(self, payment_amount):
+        # Processes payment, updating the amount paid and the remaining amount due
         if payment_amount <= 0:
             return
         self.amount_paid += payment_amount
@@ -41,6 +44,7 @@ class CheckoutRegister:
 
     def save_transaction(self):
         cart = self.shopping_cart.copy()
+        # Uses a dictionary to count quantities of each product
         tran_dict = dict()
         for product in cart:
             try:
