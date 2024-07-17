@@ -4,7 +4,7 @@
 This project is developed the Supermarket Self-Service-Checkout *system* with **Python** to streamline inventory management, enhance customer experience, automate transactions, and improve overall operational efficiency within the supermarket.
 
 
-![image description](https://www.channelnews.com.au/wp-content/uploads/2020/01/Self-Check-Out-Coles.jpg)
+![python](https://github.com/user-attachments/assets/731900ce-f1b1-439c-99fc-1dce37794963)
 
 # Overview
 
@@ -91,6 +91,11 @@ Defines a `SupermarketDAO` class to manage supermarket data, including users, pr
 * ### StartUp Login
 
 This Class manages the supermarket data with `SupermarketDAO`, offering user login, product management, transaction tracking, and report generation, including bar charts and Excel reports, using SQLite3 and OpenPyxl.
+
+## Summary
+
+This Data Structure and Algorithm project provides a comprehensive collection of essential algorithms and data structures. It includes implementations and explanations for sorting, searching, graphs, trees, and more. Designed for efficiency and clarity, this project serves as a valuable resource for learning and applying fundamental concepts in computer science.
+
 
 ## Thank you
 

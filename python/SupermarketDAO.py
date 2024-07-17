@@ -5,14 +5,10 @@ from datetime import datetime
 
 class SupermarketDAO:
     def __init__(self, db_name='supermarket.db'):
-        try:
+
             self.db = sqlite3.connect(db_name)
             self.cursor = self.db.cursor()
             self.initDB()
-        except Exception as e:
-            return print("SupermarketDAO : Database Connect Error!!")
-        # create a connection to the database
-
     def connectDB(self, db_name='supermarket.db'):
         try:
             self.db = sqlite3.connect(db_name)
