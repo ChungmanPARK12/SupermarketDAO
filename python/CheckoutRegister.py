@@ -3,6 +3,7 @@ from Transactions import Transactions
 from SupermarketDAO import SupermarketDAO
 
 class CheckoutRegister:
+    #asdfadsf
     # Initialize the SupermarketDAo interact with the database
     # Retrieves all products from the database
     def __init__(self):

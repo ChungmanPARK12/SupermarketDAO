@@ -9,8 +9,9 @@ This project is developed the Supermarket Self-Service-Checkout *system* with **
 # Overview
 
 <h2>Purpose</h2>
+
 The system use an Object Oriented (OO) approach that will require the use of several Classes to implement the final system.
-The project is for develop the details of all Product and Transaction entities related to this system be saved in text files until a decision can be made as to what **database(sqlite3)** should be used to store these two entities.
+The project is for develop the details of all Product and Transaction entities related to this system be saved in text files until a decision can be made as to what `database(sqlite3)` should be used to store these two entities.
 
 <h2>Features</h2>
 
