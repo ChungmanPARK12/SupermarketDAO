@@ -10,7 +10,7 @@ This project is developed the Supermarket Self-Service-Checkout *system* with **
 
 <h2>Purpose</h2>
 
-The system use an Object Oriented (OO) approach that will require the use of several Classes to implement the final system.
+The system use an **Object Oriented (OO)** approach that will require the use of several Classes to implement the final system.
 The project is for develop the details of all Product and Transaction entities related to this system be saved in text files until a decision can be made as to what `database(sqlite3)` should be used to store these two entities.
 
 <h2>Features</h2>
@@ -95,8 +95,7 @@ This Class manages the supermarket data with `SupermarketDAO`, offering user log
 
 ## Summary
 
-This Data Structure and Algorithm project provides a comprehensive collection of essential algorithms and data structures. It includes implementations and explanations for sorting, searching, graphs, trees, and more. Designed for efficiency and clarity, this project serves as a valuable resource for learning and applying fundamental concepts in computer science.
-
+This Data Structure and Algorithm project provides a comprehensive collection of essential **algorithms and data structures**. It includes implementations and explanations for **sorting**, **searching**, **graphs**, **trees**, and more. Designed for efficiency and clarity, this project serves as a valuable resource for learning and applying fundamental concepts in computer science.
 
 ## Thank you
 
